@@ -1,5 +1,4 @@
 // Scripts para Silvia Reis Atelier
-// Adicione seus scripts personalizados aqui
 
 function toggleDarkMode() {
     const body = document.body;
