@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Reis Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/imagens/icone.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Silvia Reis Atelier</h1>
+        </div>
+
+    </header>
+    <div class="logo-claro">
+        <img src="imagens/Logo_-_Layout_Branco.png" alt="Logo do Projeto Desenvolve branco">
+    </div>
+    <div class="logo-escuro">
+        <img src="imagens/Logo_-_Layout_Preto.png" alt="Logo do Projeto Desenvolve preto">
+    </div>
+
+    <div class="modo-escuro">
+        <button onclick="toggleDarkMode()" class="botao"></button>
+    </div>
+
+    <div class="dia">
+        <img src="imagens/dia.png" alt="imagem estilizada para modo claro" style="width: 250px">
+    </div>
+    <div class="noite">
+        <img src="imagens/noite.png" alt="imagem estilizada para o modo escuro" style="width: 250px">
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a href="atelier.html">Página Inicial</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+        <div class="galeria">
+            <div>
+                <h2>Galeria de Fotos</h2>
+            </div>
+            <img src="imagens/vestidos/vestidos (1).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (2).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (3).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (4).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (5).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (6).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (7).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (8).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (9).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (10).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (11).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (12).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (13).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (14).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (15).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (16).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (17).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (18).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (19).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (20).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (21).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (22).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (23).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (24).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (25).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (26).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (27).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (28).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (29).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (30).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (31).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (32).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (33).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (34).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (35).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (36).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (37).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (38).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (39).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (40).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (41).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (42).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (43).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (44).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (45).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (46).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (47).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (48).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (49).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (50).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (51).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (52).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (53).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (54).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (55).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (56).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (57).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (58).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (59).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (60).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (61).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (62).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (63).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (64).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (65).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (66).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (67).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+            <img src="imagens/vestidos/vestidos (68).jpeg" alt="Vestido criado pela artesã Silvia Reis"
+                onclick="openModal(this);">
+
+        </div>
+
+    </main>
+    <footer>
+        <h3>Rafael Reis, PD002, 2024 &copy; Todos os direitos reservados.</h3>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+
+</html>
